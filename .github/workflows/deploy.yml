@@ -26,4 +26,6 @@ jobs:
       - name: Deploy to Azure Funtions
         uses: Azure/functions-actions@v1
         with:
-          app-name: 
+          app-name: aztkeifunc
+          package: .
+          publish-profile: ${{ secrets.AZURE_FUNCTION_PUBLISH_PROFILE }}
